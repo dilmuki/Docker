@@ -3,6 +3,6 @@ yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce
 yum-config-manager --enable docker-ce-edge
 yum-config-manager --enable docker-ce-test
 yum-config-manager --disable docker-ce-edge
-yum install docker-ce
+yum install docker-ce -y
 systemctl start docker
 echo "Docker is running " 
